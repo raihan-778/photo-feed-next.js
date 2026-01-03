@@ -1,5 +1,12 @@
-import React from "react";
+import Modal from "@/components/Modal";
+import { PhotoDetails } from "@/components/PhotoDetails";
 
-export const page = () => {
-  return <div>page</div>;
+const PhotoDetailModal = ({ params: { id, lang } }) => {
+  return (
+    <Modal>
+      <PhotoDetails id={id} lang={lang} />
+    </Modal>
+  );
 };
+
+export default PhotoDetailModal;
